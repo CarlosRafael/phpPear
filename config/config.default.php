@@ -1,6 +1,6 @@
 ﻿<?php
 //################################################ EDITAR O DIRETÓRIO ########
-define('DIR', "/var/www/html/tutorial");
+define('DIR', "/var/www/html/phpPear");
 define('MODEL_DIR', DIR."/model");
 define('VIEW_DIR', DIR."/view");
 define('CONTROLLER_DIR', DIR."/controller");
