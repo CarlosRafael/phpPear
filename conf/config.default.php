@@ -6,6 +6,7 @@ define('VIEW_DIR', DIR."/view");
 define('CONTROLLER_DIR', DIR."/controller");
 
 ini_set('include_path', DIR.'/pear');
+ini_set('display_errors',1);
 
 require_once DIR . '/pear/DB/DataObject.php';
 require_once DIR . '/pear/Template/Sigma.php';
