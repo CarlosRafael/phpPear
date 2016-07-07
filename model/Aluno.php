@@ -21,16 +21,19 @@ class Aluno extends DB_DataObject
     ###END_AUTOCODE
     
     public function lista(){
+		
 			$tpl = new HTML_Template_Sigma(VIEW_DIR.'/aluno');
-			$tpl->loadTemplateFile('lista.html');
+			$tpl->loadTemplateFile('listar_alunos.html');
 			
 			while($this->fetch()){
-					$this->setVariable('codigo',$this->codigo);
-					$this->setVariable('nome',$this->nome);
+					$tpl->setVariable('codigo',$this->codigo);
+					$tpl->setVariable('nome',$this->nome);
 					
 					$tpl->parse('linha');
+					
 			}
 			
 			return $tpl->get();
+			
 	}
 }
